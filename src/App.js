@@ -3,11 +3,9 @@ import Navbar from "./components/Navbar";
 import Post from "./components/Post";
 import PostForm from "./components/PostForm";
 import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
-
+import store from "./store";
 import "./App.css";
 
-const store = createStore(() => [], {}, applyMiddleware());
 class App extends React.Component {
   render() {
     return (
